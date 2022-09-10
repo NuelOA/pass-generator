@@ -1,3 +1,7 @@
+*{
+  background-color: #282c34;
+
+}
 .App {
   text-align: center;
 }
@@ -6,7 +10,53 @@
   height: 40vmin;
   pointer-events: none;
 }
+#btn:hover{
+  background-color: #96e2f7;
+}
+#btn{
+  background-color: #61dafb;
+  margin-top: 40px;
+  border: none;
+  color: black;
+  padding: 20px;
+  width: 100px;
+  border-radius: 6px;
+  cursor: pointer;
+}
 
+#btn-copy:hover{
+  color: white;
+  border: 2px solid #61dafb !important;
+  margin-top: 40px;
+  border: none;
+  padding: 20px;
+  width: 100px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#btn-copy{
+  background-color: none;
+  color: white;
+  border: 2px solid #61dafb !important;
+  margin-top: 40px;
+  border: none;
+  padding: 20px;
+  width: 100px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#image{
+  height: 10rem;
+  width: 10rem;
+  margin-bottom: 50px;
+}
+#passowrd{
+  font-size: larger;
+  background-color: white;
+  color: #212328;
+  padding: 40px;
+  width: 200px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -15,7 +65,8 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  margin-top: 10vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,6 +74,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
 
 .App-link {
   color: #61dafb;
@@ -35,4 +87,52 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+@media screen and (max-width: 992px){
+  #passowrd{
+    font-size: larger;
+    background-color: #fff;
+    color: #212328;
+    padding: 40px;
+    width: 200px;
+  }
+
+.App-header {
+  background-color: #282c34;
+  margin-top: 5vh;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+#btn-copy{
+  background-color: none;
+  color: white;
+  font-size: 14px;
+  border: 2px solid #61dafb !important;
+  margin-top: 40px;
+  border: none;
+  padding: 20px;
+  width: 100px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#btn{
+  background-color: #61dafb;
+  margin-top: 40px;
+  border: none;
+  font-size: 14px;
+  color: black;
+  padding: 20px;
+  width: 100px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 }
