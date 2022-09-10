@@ -23,6 +23,9 @@
   border-radius: 6px;
   cursor: pointer;
 }
+.check{
+  color: #61dafb;
+}
 
 #btn-copy:hover{
   color: white;
@@ -50,6 +53,7 @@
   width: 10rem;
   margin-bottom: 50px;
 }
+
 #passowrd{
   font-size: larger;
   background-color: white;
@@ -74,7 +78,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+#default{
+  color: #61dafb;
+}
 
 .App-link {
   color: #61dafb;
@@ -93,7 +99,7 @@
 @media screen and (max-width: 992px){
   #passowrd{
     font-size: larger;
-    background-color: #fff;
+    background-color: #ffffff;
     color: #212328;
     padding: 40px;
     width: 200px;
@@ -101,7 +107,7 @@
 
 .App-header {
   background-color: #282c34;
-  margin-top: 5vh;
+  margin-top: 4vh;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
