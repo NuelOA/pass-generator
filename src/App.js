@@ -22,12 +22,18 @@ const checked = () =>{
  async function copyPass(){
     let genPass = document.getElementById('passowrd')
     let content = genPass.textContent
-    try{
-      await navigator.clipboard.writeText(content);
-      alert("copied")
-    }catch(error){
-       console.log(error)
+    if(!content){
+      alert("nothing to copy. Generate password")
+      return
+    }else{
+      try{
+        await navigator.clipboard.writeText(content);
+        alert("copied")
+      }catch(error){
+         console.log(error)
+      }
     }
+    
 
  }
 
