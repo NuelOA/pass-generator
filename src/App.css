@@ -13,8 +13,13 @@
   pointer-events: none;
 }
 #btn:hover{
-  background-color: #96e2f7;
+  background-color: #a7ecff;
 }
+p:empty:not(:focus)::before{
+  content: attr(data-placeholder);
+  color: rgb(83, 95, 124);
+}
+
 #btn{
   background-color: #61dafb;
   margin-top: 40px;
@@ -28,6 +33,7 @@
 .check{
   color: #61dafb;
 }
+
 
 #btn-copy:hover{
   color: white;
@@ -50,6 +56,7 @@
   border-radius: 6px;
   cursor: pointer;
 }
+
 #image{
   height: 10rem;
   width: 10rem;
@@ -58,10 +65,13 @@
 
 #passowrd{
   font-size: larger;
-  background-color: white;
-  color: #212328;
-  padding: 40px;
-  width: 200px;
+  background-color: rgba(59, 79, 98, 0.845);
+  width: 50%;
+  border-radius: 20px;
+  color: #ffff;
+  font-weight: bolder;
+  padding: 30px;
+  /* width: 200px; */
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -101,11 +111,12 @@
 @media screen and (max-width: 992px){
   #passowrd{
     font-size: larger;
-    background-color: #ffffff;
-    color: #212328;
+    background-color:rgba(59, 79, 98, 0.845);
+    color: #fff;
+    font-weight: bolder;
     padding: 20px;
     font-size: 20px;
-    width: 200px;
+    width: 50%;
   }
 
 .App-header {
